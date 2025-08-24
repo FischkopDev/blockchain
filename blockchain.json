@@ -1,33 +1,82 @@
 {
   "chain": [
     {
-      "id": 0,
-      "data": "Start of Blockchain",
-      "dataHash": "e45273b0cccccf1abeb9f2466bc145c6dd7a7b7bc9ce29a1fbc9b69ebd77f889"
+      "index": 0,
+      "timestamp": 1755118984289,
+      "transactions": [],
+      "lastHash": "Start of the journey",
+      "hash": "76a5370c94b5f86cf05d6365ee9260ffaff4cc318566ae05ecad8e11f9dee229"
     },
     {
-      "id": 1,
-      "data": "Hier g den zweiten Test",
-      "dataHash": "c1af7f06291e6824948e79d2aa35ec35b417b2c255dee1f3b3b5673e3078bdbb",
-      "lastHash": "e45273b0cccccf1abeb9f2466bc145c6dd7a7b7bc9ce29a1fbc9b69ebd77f889"
+      "index": 1,
+      "timestamp": 1755118984328,
+      "transactions": [
+        {
+          "sender": "SYSTEM",
+          "receiver": "alice",
+          "amount": 100.0,
+          "timestamp": 1755118984328
+        },
+        {
+          "sender": "SYSTEM",
+          "receiver": "miner_temp_for_account_setup",
+          "amount": 10.0,
+          "timestamp": 1755118984328
+        }
+      ],
+      "lastHash": "76a5370c94b5f86cf05d6365ee9260ffaff4cc318566ae05ecad8e11f9dee229",
+      "hash": "3d2dab8e8436054c1af561108a090754d215896d8760466acf058a880bb06c96"
     },
     {
-      "id": 2,
-      "data": "Hier gibt es den dritten Test",
-      "dataHash": "9601d29b075616df1d42b0bd1abcd832d6192be883f3b5c1d01c8e22e05dbb92",
-      "lastHash": "c1af7f06291e6824948e79d2aa35ec35b417b2c255dee1f3b3b5673e3078bdbb"
+      "index": 2,
+      "timestamp": 1755118984390,
+      "transactions": [
+        {
+          "sender": "SYSTEM",
+          "receiver": "bob",
+          "amount": 50.0,
+          "timestamp": 1755118984389
+        },
+        {
+          "sender": "SYSTEM",
+          "receiver": "miner_temp_for_account_setup",
+          "amount": 10.0,
+          "timestamp": 1755118984389
+        }
+      ],
+      "lastHash": "3d2dab8e8436054c1af561108a090754d215896d8760466acf058a880bb06c96",
+      "hash": "6a658b0b72f777b757b129a0e4c26e5891990bf1cda4227d0dba4fc7527d332a"
     },
     {
-      "id": 3,
-      "data": "Hier gibt es den zweiten Test",
-      "dataHash": "71d3c84b66e5e8e48ebe8e2e4da3e489ce3293d58724960ad4538372cdf801b1",
-      "lastHash": "9601d29b075616df1d42b0bd1abcd832d6192be883f3b5c1d01c8e22e05dbb92"
-    },
-    {
-      "id": 4,
-      "data": "Hier gibt es den zweiten Test",
-      "dataHash": "a639fe821e6e128487d5e3fe2db6bd9eac052df6ec065632a08ea7f794dc2819",
-      "lastHash": "71d3c84b66e5e8e48ebe8e2e4da3e489ce3293d58724960ad4538372cdf801b1"
+      "index": 3,
+      "timestamp": 1755118984394,
+      "transactions": [
+        {
+          "sender": "alice",
+          "receiver": "bob",
+          "amount": 30.0,
+          "timestamp": 1755118984393
+        },
+        {
+          "sender": "SYSTEM",
+          "receiver": "miner",
+          "amount": 10.0,
+          "timestamp": 1755118984394
+        }
+      ],
+      "lastHash": "6a658b0b72f777b757b129a0e4c26e5891990bf1cda4227d0dba4fc7527d332a",
+      "hash": "2fa9aa46a7fb14e2442f5e1793b699fd9d86cb88ba231e773536447ad77db6f1"
     }
-  ]
+  ],
+  "txPool": {
+    "pending": []
+  },
+  "accounts": {
+    "SYSTEM": 1.7976931348623157E308,
+    "miner_temp_for_account_setup": 0.0,
+    "bob": 0.0,
+    "alice": 0.0,
+    "miner": 0.0
+  },
+  "miningReward": 10.0
 }
